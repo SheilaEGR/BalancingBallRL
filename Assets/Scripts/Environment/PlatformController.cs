@@ -26,7 +26,7 @@ public class PlatformController : MonoBehaviour
     }
 
     // =====        PRIVATE METHODS
-    private void SpeedControl(Observations obs)
+    private float SpeedControl(Observations obs)
     {
         float ballSpeed = obs.ballVelocity.x;
         float speedError = ballSpeed - speedSetPoint;
